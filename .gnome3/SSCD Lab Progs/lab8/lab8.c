@@ -99,3 +99,8 @@ int main()
 		
 	}
 }
+
+
+//Enter the Available Resources: 3 3 2
+//Max matrix:7 5 3, 3 2 2, 7 0 2, 2 2 2, 4 3 3
+//Allocation matrix:0 1 0,2 0 0, 3 0 2, 2 1 1, 0 0 2

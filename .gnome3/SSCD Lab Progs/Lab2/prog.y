@@ -6,7 +6,7 @@
 %%
 input:stt'\n' {printf("\nPattern found\n"); exit(0);};
 stt: A exp B | B ;
-exp:A exp | ;
+exp: A exp | ;
 %%
 main()
 {
