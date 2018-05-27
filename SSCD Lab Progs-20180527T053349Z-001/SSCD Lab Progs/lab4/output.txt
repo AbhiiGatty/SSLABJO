@@ -1,0 +1,49 @@
+GRAMMAR is :
+E -> E + T | T 
+ T -> T * F | F
+ F -> (E) | id
+
+Enter input string:id+id*id
+
+Stack 	 Input 	 Action 
+--------	-------	--------
+
+$	id+id*id$	
+$id	  +id*id$	SHIFT id
+$F	  +id*id$	REDUCE F-> id 
+$T	  +id*id$	REDUCE T -> F 
+$E	  +id*id$	REDUCE E -> T 
+$E+	   id*id$	SHIFT +
+$E+id	     *id$	SHIFT id
+$E+F	     *id$	REDUCE F-> id 
+$E+T	     *id$	REDUCE T -> F 
+$E+T*	      id$	SHIFT *
+$E+T*id	        $	SHIFT id
+$E+T*F	        $	REDUCE F-> id 
+$E+T	        $	REDUCE T -> T * F 
+$E	        $	REDUCE E -> E + T 
+****SUCCESSFULL PARSING*****
+
+
+
+GRAMMAR is :
+E -> E + T | T 
+ T -> T * F | F
+ F -> (E) | id
+
+Enter input string:id+(id)*id
+
+Stack 	 Input 	 Action 
+--------	-------	--------
+
+$	id+(id)*id$	
+$id	  +(id)*id$	SHIFT id
+$F	  +(id)*id$	REDUCE F-> id 
+$T	  +(id)*id$	REDUCE T -> F 
+$E	  +(id)*id$	REDUCE E -> T 
+$E+	   (id)*id$	SHIFT +
+ERROR IN INPUT
+
+****FAILURE IN PARSING*****
+
+

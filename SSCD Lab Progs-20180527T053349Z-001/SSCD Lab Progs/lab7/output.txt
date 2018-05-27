@@ -1,0 +1,70 @@
+Enter the choice:
+1.Round Robin 
+ 2.SRT 
+3.Exit
+1
+Round Robin Scheduling Algorithm
+Enter the number of processes:3
+Enter the burst time for sequences:
+24
+3
+3
+Enter the quantum time:4
+Process_no Burst time Wait time Turn around time
+1		24		6	30
+2		3		4	7
+3		3		7	10
+Average wait time is 5.666667
+Average turn around time 15.666667
+Enter the choice:
+1.Round Robin 
+ 2.SRT 
+3.Exit
+2
+
+
+---Shortest Remaining Time Next---Enter the number of processes:4
+
+
+Enter the arrival time for process 1:0
+
+Enter the burst time for process 1:8
+
+
+Enter the arrival time for process 2:1
+
+Enter the burst time for process 2:4
+
+
+Enter the arrival time for process 3:2
+
+Enter the burst time for process 3:9
+
+
+Enter the arrival time for process 4:3
+
+Enter the burst time for process 4:5
+
+
+			---SHORTEST REMAINING TIME FIRST---
+
+Process Arrival Burst Waiting Finishing turnaround Tr/Tb
+
+
+   id      time    time       time     time      time
+
+    1        0       8        9         17        17        2.1
+
+    2        1       4        0          5         4        1.0
+
+    3        2       9       15         26        24        2.7
+
+    4        3       5        2         10         7        1.4
+
+tavg=13.000000
+wavg=6.500000
+Enter the choice:
+1.Round Robin 
+ 2.SRT 
+3.Exit
+
